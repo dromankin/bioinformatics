@@ -1,0 +1,14 @@
+[2026-06-07T20:01:48+0700] [MainThread] [I] [toil.lib.history] Recording workflow creation of bc76bc7d-3b27-46bf-be45-2a2125b6f089 in file:/home/shadowplay/bioinformatics/task3/my-job-store
+[2026-06-07T20:01:48+0700] [MainThread] [I] [toil.lib.history] Workflow bc76bc7d-3b27-46bf-be45-2a2125b6f089 is a run of /home/shadowplay/bioinformatics/task3/pipeline_hello.py
+[2026-06-07T20:01:48+0700] [MainThread] [I] [toil] Running Toil version 9.5.0-855577413b6e3ceb33a90b3ec415e7a3fc0badba on host DESKTOP-S2VAAPI.
+[2026-06-07T20:01:48+0700] [MainThread] [I] [toil.realtimeLogger] Starting real-time logging.
+[2026-06-07T20:01:48+0700] [MainThread] [I] [toil.leader] Issued job 'helloWorld' kind-helloWorld/instance-jfrygs25 v1 with job batch system ID: 1 and disk: 953.7 Mi, memory: 953.7 Mi, cores: 1, accelerators: [], preemptible: False
+[2026-06-07T20:01:49+0700] [MainThread] [I] [toil.leader] 0 jobs are running, 0 jobs are issued and waiting to run
+[2026-06-07T20:01:50+0700] [MainThread] [I] [toil.leader] Finished toil run successfully.
+
+Workflow Progress 100%|█████████████████████████████████████████████████████████████████| 1/1 (0 failures) [00:00<00:00, 3.65 jobs/s]
+[2026-06-07T20:01:50+0700] [MainThread] [I] [toil.realtimeLogger] Stopping real-time logging server.
+[2026-06-07T20:01:51+0700] [MainThread] [I] [toil.realtimeLogger] Joining real-time logging server thread.
+[2026-06-07T20:01:51+0700] [MainThread] [I] [toil.lib.history] Workflow bc76bc7d-3b27-46bf-be45-2a2125b6f089 stopped. Success: True
+[2026-06-07T20:01:51+0700] [MainThread] [I] [toil.common] Successfully deleted the job store: FileJobStore(/home/shadowplay/bioinformatics/task3/my-job-store)
+Hello, world!, here's a message: You did it!

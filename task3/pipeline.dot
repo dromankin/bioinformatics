@@ -1,0 +1,24 @@
+digraph ToilPipeline {
+    rankdir=TB;
+    node [shape=box, style="filled,rounded", fontname="Arial", fillcolor="#f0f0f0", color="#333333"];
+
+    root [label="root = Job()", fillcolor="#ffc1e3"];
+    run_fastqc [label="run_fastqc", fillcolor="#bde0fe"];
+    index_reference [label="index_reference", fillcolor="#bde0fe"];
+    
+    align_reads [label="align_reads\n(Follow-On)", fillcolor="#ffe3a8", style="filled,rounded"];
+    
+    samtools_view [label="samtools_view"];
+    qc_check [label="qc_check"];
+    sort_and_variant [label="sort_and_variant"];
+
+    root -> run_fastqc;
+    root -> index_reference;
+    
+    run_fastqc -> align_reads [style=dashed, color="#666666"];
+    index_reference -> align_reads [color="#28a745"];
+    
+    align_reads -> samtools_view;
+    samtools_view -> qc_check;
+    qc_check -> sort_and_variant;
+}
